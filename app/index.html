@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<title>GTW</title>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<meta name="theme-color" content="#202b2b">
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,500,600,700' rel='stylesheet' type='text/css'>
+<link href="styles/main.css" rel="stylesheet"/>
+</head>
+<body ng-app="gtwApp">
+<!--[if lte IE 8]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<div ng-view="" autoscroll="true"></div>
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/angular-aria/angular-aria.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-messages/angular-messages.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/lib/jquery-1.11.0.min.js"></script>
+<script src="scripts/lib/bootstrap.min.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/routes.js"></script>
+<script src="scripts/directives/mainDirective.js"></script>
+<script src="scripts/mainCtrl.js"></script>
+<script src="scripts/controllers/dashboardCtrl.js"></script>
+<script src="scripts/controllers/loginCtrl.js"></script>
+<!-- endbuild -->
+</body>
+</html>
